@@ -1,0 +1,31 @@
+/* join.css */
+body {
+    background-color: #222;
+}
+#wrap {
+    width: 420px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    padding-top: 100px;
+}
+#wrap main {}
+/* ---------------------------------로고 */
+#wrap main h1 {
+    width: 160px; height: 44px;
+    margin:0 auto;
+    margin-bottom: 12px;
+
+}
+#wrap main h1 img {width: 100%;}
+/* ---------------------------------상태 */
+#wrap main .tab_menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap:60px;
+    padding: 20px 0 32px 0;
+}
+#wrap main .tab_menu .sign_in {}
+#wrap main .tab_menu .active {border-bottom: 2px solid #1ED760;}
+#wrap main .tab_menu .sign_up {}
+#wrap main .tab_menu * {color: #fff;}

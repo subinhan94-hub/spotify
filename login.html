@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>login | spotify</title> <!-- 현재페이지명 | 사이트명 -->
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <script src="./scripts/login.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <main>
+            <h1><a href="./index.html"><img src="./images/LOGO.png" alt="spotify"></a></h1>
+            <div class="tab_menu">
+                <a href="./login.html" class="active sign_in">SIGN IN</a>
+                <a href="./join.html" class="sign_up">SING UP</a>
+            </div>
+            <form action="#" method="post" name="login_frm"> <!-- form :post 보안이 필요한 폼 서버 -->
+                <div class="id_pw_g"><!-- 로그인을 위한 입력그룹 뜻 fieldset = div -->
+                    <input type="text" name="user_id" id ="user_id" placeholder="아이디를 입력하세요" autocomplete="on">
+                    <!-- (위) test 한 줄 글자 입력 칸(아이디, 이름, 닉네임, 주소, 추천인, 주민등록번호앞 등) -->
+                    <input type="password" name="user_pw" id ="user_pw" placeholder="비밀번호를 입력하세요">
+                    <!-- (위) password 보안 글자 입력칸(비밀번호, 비번재입력, 주민뒷자리, 게시판비밀글, 등) -->
+                </div>
+                <div class="login_y_g"><!-- 로그인 유지 체크 박스 -->
+                    <button type="button"><img src="#" alt="로그인 유지 체크박스">로그인 상태 유지</button>
+                </div>
+                <div class="btn_search_g"><!-- 로그인 버튼, 비밀번호 찾기 -->
+                    <button type="button" id="iogin_btn">LOGIN</button>
+                    <!-- (위)type=button (범용(모든기능 가능), 자바스크립트 추처리로 모든 기능 가능) -->
+                    <a href="#" class="search_pw">비밀번호 찾기</a>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
