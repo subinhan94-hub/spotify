@@ -26,6 +26,76 @@ body {
     padding: 20px 0 32px 0;
 }
 #wrap main .tab_menu .sign_in {}
-#wrap main .tab_menu .active {border-bottom: 2px solid #1ED760;}
+#wrap main .tab_menu .active {position: relative;}
+#wrap main .tab_menu .active::after {
+    content:''; display: block;
+    width: 30px; height: 2px;
+    position: absolute; left: 15px; bottom: -10px;
+    background:linear-gradient(90deg,#1ED760,yellow,#1ED760)
+}
+#wrap main .tab_menu .active::before {
+    content:''; display: block;
+    width: 60px; height: 11px;
+    background-color: rgba(255,255,0,0.5);
+    position: absolute; left: 0; bottom: 0; z-index: -1;
+}
 #wrap main .tab_menu .sign_up {}
 #wrap main .tab_menu * {color: #fff;}
+#wrap main form[name*=join] {
+    background-color: purple;
+}
+/* --------------------------------------------이메일주소 */
+#wrap main form[name*=join] h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+#wrap main form .email_join p #user_email {
+    width: 380px; height: 46px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+#wrap main form .email_join p {
+    text-align: center;
+    
+}
+#wrap main form .email_join p #email_next_btn {
+    border-radius: 23px;
+    background-color: #1ED760;
+    width: 380px; height: 46px;
+}
+/* --------------------------------------------구글 애플로 가입하기 */
+#wrap main form .or_join p {
+    text-align: center;
+    margin: 10px 0;
+    color: #fff;
+}
+#wrap main form[name*=join] .or_join .google {
+    background-image: url(../images/Group.svg);
+}
+#wrap main form[name*=join] .or_join .apple {
+    background-image: url(../images/Vector.svg);
+}
+#wrap main form[name*=join] .or_join a[href*=http] {
+    background-repeat: no-repeat;
+    border: 1px solid #fff; color: #fff;
+    border-radius: 20px;
+    display: block; line-height: 40px; /* line-height 는 위 아래 요소를 잡아서 수직 중앙으로 옴 */
+    text-align: center;
+    background-position: 15px center;
+    margin-bottom: 10px;
+}
+#wrap main form .or_join {margin-bottom: 50px;}
+/* -----------------------------------------이미계정이 있나요/로그인 */
+#wrap main p {
+    text-align: center;
+    color: #AAAAAA;
+    margin-bottom: 12px;
+}
+#wrap main .login_link {
+    text-align: center;
+    display: block;
+    color: #fff;
+}
